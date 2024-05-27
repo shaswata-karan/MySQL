@@ -1,0 +1,47 @@
+CREATE DATABASE temp1;
+CREATE DATABASE IF NOT EXISTS temp1;
+
+DROP DATABASE temp1;
+DROP DATABASE IF EXISTS temp1;
+
+CREATE DATABASE college;
+
+USE college;
+
+CREATE TABLE student (
+ID INT PRIMARY KEY,
+NAME VARCHAR(50),
+AGE INT NOT NULL
+);
+
+INSERT INTO student VALUES(1, "SHASWATA", 22);
+INSERT INTO student VALUES(2, "AYUSHA", 22);
+
+SELECT*FROM student;
+
+SHOW DATABASES;
+
+SHOW TABLES;
+
+DROP TABLE student;
+
+CREATE TABLE student (
+rollno INT PRIMARY KEY,
+name VARCHAR(50)
+);
+
+SELECT*FROM student;
+
+INSERT INTO student
+(rollno, name)
+VALUES
+(101, "karan"),
+(102, "arjun"),
+(103, "ram");
+
+INSERT INTO student VALUES (104, "shyam");
+
+
+
+
+
